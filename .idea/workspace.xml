@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad4deeed-1258-4092-9b2f-7a13fbe45299" name="Changes" comment="">
+    <list default="true" id="ad4deeed-1258-4092-9b2f-7a13fbe45299" name="Changes" comment="update buil.yml">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +52,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726297856679</updated>
-      <workItem from="1726297858075" duration="100000" />
+      <workItem from="1726297858075" duration="247000" />
     </task>
+    <task id="LOCAL-00001" summary="update buil.yml">
+      <option name="closed" value="true" />
+      <created>1726297974441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726297974441</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update buil.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update buil.yml" />
   </component>
 </project>
