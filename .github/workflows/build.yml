@@ -37,7 +37,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t ${{ secrets.ECR_URI }}:$IMAGE_TAG .
-          docker push $ECR_URI:$IMAGE_TAG
+          docker push ${{ secrets.ECR_URI }}:$IMAGE_TAG
 
       - name: Image digest
         run: |
