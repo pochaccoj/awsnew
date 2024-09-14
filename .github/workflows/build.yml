@@ -33,11 +33,11 @@ jobs:
 
       - name: Get ECR repository URI
         id: ecr_uri
-        run: echo "REPO_URI=738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2 >> $GITHUB_ENV
+        run: echo "REPO_URI=738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2" >> $GITHUB_ENV
 
       - name: Build, tag, and push Docker image
         env:
-          ECR_URI: 738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2
+          ECR_URI: ${{ REPO_URI }}
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $ECR_URI:$IMAGE_TAG .
@@ -45,6 +45,6 @@ jobs:
 
       - name: Image digest
         run: |
-          IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ env.REPO_URI }}:${{ github.sha }})
+          IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ REPO_URI }}:${{ github.sha }})
           echo "Docker image pushed: $IMAGE_DIGEST"
 :
