@@ -34,13 +34,12 @@ jobs:
 
       - name: Build, tag, and push Docker image
         env:
-          ECR_URI: 738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build -t $ECR_URI:$IMAGE_TAG .
+          docker build -t ${{ secrets.ECR_URI }}:$IMAGE_TAG .
           docker push $ECR_URI:$IMAGE_TAG
 
       - name: Image digest
         run: |
-          IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' 738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2:${{ github.sha }})
+          IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ ECR_URI }}:${{ github.sha }})
           echo "Image digest: $IMAGE_DIGEST"
