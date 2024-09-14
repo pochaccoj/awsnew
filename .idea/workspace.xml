@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ad4deeed-1258-4092-9b2f-7a13fbe45299" name="Changes" comment="update build.yaml">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
@@ -29,6 +32,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/iccy/repo/se-workshop-ecs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -53,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726297856679</updated>
-      <workItem from="1726297858075" duration="294000" />
+      <workItem from="1726297858075" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="update buil.yml">
       <option name="closed" value="true" />
@@ -71,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726298113413</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update build.yaml">
+      <option name="closed" value="true" />
+      <created>1726298159668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726298159668</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
