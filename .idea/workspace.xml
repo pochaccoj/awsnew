@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad4deeed-1258-4092-9b2f-7a13fbe45299" name="Changes" comment="update buil.yml">
+    <list default="true" id="ad4deeed-1258-4092-9b2f-7a13fbe45299" name="Changes" comment="update build.yaml">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726297856679</updated>
-      <workItem from="1726297858075" duration="247000" />
+      <workItem from="1726297858075" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="update buil.yml">
       <option name="closed" value="true" />
@@ -62,7 +63,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726297974441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update build.yaml">
+      <option name="closed" value="true" />
+      <created>1726298113413</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726298113413</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,6 +79,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update buil.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update buil.yml" />
+    <MESSAGE value="update build.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update build.yaml" />
   </component>
 </project>
