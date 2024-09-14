@@ -41,5 +41,5 @@ jobs:
 
       - name: Image digest
         run: |
-          IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ ECR_URI }}:${{ github.sha }})
+          IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ secrets.ECR_URI }}:${{ github.sha }})
           echo "Image digest: $IMAGE_DIGEST"
