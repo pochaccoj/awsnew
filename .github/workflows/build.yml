@@ -33,11 +33,11 @@ jobs:
 
       - name: Get ECR repository URI
         id: ecr_uri
-        run: echo "REPO_URI=$(aws ecr describe-repositories --repository-names se-workshop-ecs --query 'repositories[0].repositoryUri' --output text)" >> $GITHUB_ENV
+        run: echo "REPO_URI=738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2 >> $GITHUB_ENV
 
       - name: Build, tag, and push Docker image
         env:
-          ECR_URI: ${{ env.REPO_URI }}
+          ECR_URI: 738196441615.dkr.ecr.us-east-1.amazonaws.com/appleboiy/se-workshop-ec2
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $ECR_URI:$IMAGE_TAG .
